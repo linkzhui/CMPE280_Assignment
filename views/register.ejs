@@ -5,11 +5,14 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/register.css" />
     <title>Registration</title>
     <script>
-
+        function click_function(){
+            alert("register successful");
+            event.preventDefault();
+        }
     </script>
 </head>
 <body>
-<form method="post" action="/main_page" onsubmit="">
+<form method="post" action="/main_page" onsubmit="click_function()">
     <fieldset>
         <legend>User register</legend>
         <label>Email:</label>

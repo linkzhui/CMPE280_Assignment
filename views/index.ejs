@@ -5,18 +5,27 @@
     <title>User login</title>
     <link rel="stylesheet" type="text/css" href="/stylesheets/index.css"/>
     <script>
+        function click_login_function(){
+                alert("you click login button");
+            event.preventDefault();
+        }
 
+        function click_register_function(){
+            alert("you click register button");
+            event.preventDefault();
+        }
     </script>
 </head>
 <body>
 
-<form method="get" action="/main_page" onsubmit="">
+<form method="get" action="/main_page" onsubmit="click_login_function(this)">
     <fieldset>
         <legend>User login</legend>
         <label>Email:</label> <input type="email" name="user" id="user" required>
         <label>Password:</label><input type="password" name="password" id="password" required>
-        <input id = "login" type="submit" value="login"/>
-        <input id = "register" type="button" value="register" onclick="window.location.href='/register'">
+        <input var = "login" id = "login" type="submit" value="login"/>
+        <!--<input id = "register" type="button" value="register" onclick="window.location.href='/register'">-->
+        <input var = "register" id = "register" type="button" value="register" onclick="click_register_function(this)">
     </fieldset>
 </form>
 

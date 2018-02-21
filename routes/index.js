@@ -16,8 +16,8 @@ router.post('/main_page', function(req, res) {
 });
 
 /* GET home page. */
-router.get('/registration', function(req, res, next) {
-    res.render('registration');
+router.get('/register', function(req, res, next) {
+    res.render('register');
 });
 
 module.exports = router;

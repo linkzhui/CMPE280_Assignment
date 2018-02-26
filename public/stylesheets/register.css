@@ -37,6 +37,6 @@ input:required {
 }
 
 input:invalid {
-  color: white;
+  color: darkred;
   /*background-color: red;*/
 }
